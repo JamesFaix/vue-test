@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <p>
-      <router-link to="/info">Go to Info</router-link> | 
+      <router-link to="/counter">Go to Counter</router-link> | 
       <router-link to="/hello">Go to Hello World</router-link>
     </p>
     <router-view></router-view>

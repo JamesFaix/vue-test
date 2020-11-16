@@ -3,16 +3,17 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import App from './App.vue';
 import HelloWorld from './components/HelloWorld';
-import InfoPage from './components/InfoPage';
+import CounterPage from './components/CounterPage';
 
-Vue.use(VueRouter, Vuex);
+Vue.use(VueRouter);
+Vue.use(Vuex);
 
 Vue.config.productionTip = false;
 
 const router = new VueRouter({
   routes: [
     { path: '/hello', component: HelloWorld },
-    { path: '/info', component: InfoPage }
+    { path: '/counter', component: CounterPage }
   ]
 });
 
