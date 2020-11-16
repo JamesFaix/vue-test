@@ -9,13 +9,20 @@
 </template>
 
 <script>
+import { INCREMENT, DECREMENT } from '../store';
+
 export default {
   name: 'CounterPage',
   props: {
   },
   methods: {
     update(change) {
-      this.$store.state.count += change;
+      if (change > 0) {
+        this.$store.commit(INCREMENT);
+      }
+      else if (change < 0) {
+        this.$store.commit(DECREMENT);
+      }
     }
   }
 }
